@@ -103,4 +103,10 @@ def on_start_button_click():
         else:
             return
         run_adb_command_and_open_app(activity_name)
-        
+
+# Function to run ADB command and open app.
+def run_adb_command_and_open_app(activity_name):
+    command = f"adb -d {activity_name}"
+    result = subprocess.run(command, shell=True, stdout=subprocess.PIPE, text=True)
+    return result.stdout.strip()
+
