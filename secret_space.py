@@ -114,3 +114,19 @@ def tap_screen(x, y):
     command = f"shell input tap {x} {y}"
     run_adb_command_and_open_app(command)
 
+def activate_vivo_automatically():
+    run_adb_command_and_open_app('shell am start -a android.settings.USER_SETTINGS')
+    time.sleep(2)
+    tap_screen(900, 800)
+    time.sleep(1)
+    tap_screen(770, 2088)
+    run_adb_command_and_open_app("shell input text user_2")
+    time.sleep(1)
+    tap_screen(1002, 174)
+    time.sleep(7)
+    tap_screen(770, 2088)
+    time.sleep(1)
+    tap_screen(555, 1106)
+    time.sleep(1)
+    tap_screen(770, 2088)
+
