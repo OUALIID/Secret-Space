@@ -68,3 +68,14 @@ def show_disconnected():
     # Hide the Start button
     start_button_label.place_forget()
 
+# Function to get device information
+def get_device_info():
+    properties = ["ro.product.manufacturer", "ro.product.model", "ro.serialno"]
+    device_info = [subprocess.getoutput(f"adb shell getprop {prop} 2>/dev/null").strip() for prop in properties]
+
+    if all(device_info):
+        return device_info
+    else:
+        return []
+
+
