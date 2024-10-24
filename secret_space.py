@@ -15,3 +15,12 @@ def update_label_image(image_path):
     label.image = image
     label.lift()
 
+# Function to update label according to device connection status
+def update_label():
+    output = subprocess.getoutput("adb get-state 2>/dev/null").strip()
+    if output == "device":
+        show_connected()
+    else:
+        show_disconnected()
+    root.after(1000, update_label)
+
