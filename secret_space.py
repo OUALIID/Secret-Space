@@ -48,3 +48,23 @@ def show_connected():
     # Show the Start button
     start_button_label.place(relx=0.35, rely=0.43)
 
+# Function to display UI elements when device is disconnected
+def show_disconnected():
+    update_label_image("/home/oualid/Documents/piplo/zimage/disconnected_device.png")
+    root.geometry("360x250")
+    root.configure(bg="#000000")
+    label.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
+    canvas.pack_forget()
+
+    # Hide the Group3.png image
+    image_label.place_forget()
+
+    # Hide the check button
+    check_button.place_forget()
+    
+    # Hide device information labels
+    hide_device_info()
+
+    # Hide the Start button
+    start_button_label.place_forget()
+
