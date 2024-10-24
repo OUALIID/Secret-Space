@@ -84,3 +84,8 @@ def hide_device_info():
         if isinstance(widget, tk.Label) and widget != label:
             widget.place_forget()
 
+# Function to handle check button click event
+def on_checkbutton_click():
+    global check_button_clicked
+    check_button_clicked = not check_button_clicked
+
