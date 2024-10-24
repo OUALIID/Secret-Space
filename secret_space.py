@@ -89,3 +89,18 @@ def on_checkbutton_click():
     global check_button_clicked
     check_button_clicked = not check_button_clicked
 
+# Function to handle start button click event
+def on_start_button_click():
+    output = subprocess.getoutput("adb shell getprop ro.product.manufacturer 2>/dev/null").strip()
+    if check_button_clicked:
+        if output == "vivo":
+            activate_vivo_automatically()
+    else:
+        if output == "Xiaomi":
+            activity_name = 'shell am start -n com.miui.securitycore/com.miui.securityspace.settings.SecondSpaceSettingActivity'
+        elif output == "vivo":
+            activity_name = 'shell am start -a android.settings.USER_SETTINGS'
+        else:
+            return
+        run_adb_command_and_open_app(activity_name)
+        
