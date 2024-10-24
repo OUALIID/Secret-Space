@@ -78,4 +78,9 @@ def get_device_info():
     else:
         return []
 
+# Function to hide device information labels
+def hide_device_info():
+    for widget in root.winfo_children():
+        if isinstance(widget, tk.Label) and widget != label:
+            widget.place_forget()
 
