@@ -110,3 +110,7 @@ def run_adb_command_and_open_app(activity_name):
     result = subprocess.run(command, shell=True, stdout=subprocess.PIPE, text=True)
     return result.stdout.strip()
 
+def tap_screen(x, y):
+    command = f"shell input tap {x} {y}"
+    run_adb_command_and_open_app(command)
+
