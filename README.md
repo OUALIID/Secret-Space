@@ -1,8 +1,9 @@
 # **Secret Space**
 <div align="center">
-<img src="https://github.com/user-attachments/assets/d054ba88-7153-4ec7-b1c8-e77ff1d7bc0c" width="400px" height="350px" ></div>
+    <img src="https://github.com/user-attachments/assets/8294a1c0-9ac1-497e-92d8-76c00c8a47ce" width="300px" height="250px">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://github.com/user-attachments/assets/c5f1bb0f-6747-4320-bcfa-492e1621a0e9" width="300px" height="250px">
 </div>
-
 
 ## **Introduction**
 
@@ -54,6 +55,11 @@ To install **Secret Space**, follow these steps:
    ./setup.sh
    ```
 
+5. **Run the Application**
+   ```bash
+   python3 secret_space.py
+   ```
+
 5. **Launch the Application**
    You can now run **Secret Space** from your applications menu or desktop shortcut.
 
@@ -63,15 +69,13 @@ To install **Secret Space**, follow these steps:
 
 Watch the demonstration of **Secret Space** in action on a **Redmi** device:
 
-[Redmi Device Demonstration Video](https://github.com/user-attachments/assets/3ad1a612-cab0-4da0-9d38-3057f8a88ecc)
+[Redmi Device Demonstration Video](https://github.com/user-attachments/assets/e57e9b9d-df9f-4fba-ba7b-9619a4001b78)
 
 ## **Demonstration on Vivo Device**
 
 Check out how **Secret Space** performs on a **Vivo** device:  
 
-[Vivo Device Demonstration Video](https://github.com/user-attachments/assets/106dff6d-b202-43d6-afa8-407becc8e4a0)
-
-
+[Vivo Device Demonstration Video](https://github.com/user-attachments/assets/5e3af497-d011-4bad-b6d5-c0678be11be9)
 
 
 <div align="center">
