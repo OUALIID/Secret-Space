@@ -1,6 +1,8 @@
-# **Secret Space**
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/8294a1c0-9ac1-497e-92d8-76c00c8a47ce" width="300px" height="250px">
+
+# **✨Secret Space✨**
+
+   <img src="https://github.com/user-attachments/assets/8294a1c0-9ac1-497e-92d8-76c00c8a47ce" width="300px" height="250px">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <img src="https://github.com/user-attachments/assets/c5f1bb0f-6747-4320-bcfa-492e1621a0e9" width="300px" height="250px">
 </div>
