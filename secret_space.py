@@ -26,7 +26,7 @@ def update_label():
 
 # Function to display UI elements when device is connected
 def show_connected():
-    update_label_image("/home/oualid/Documents/piplo/zimage/connected_device.png")
+    update_label_image("images/connected_device.png")
     root.geometry("360x390")
     root.configure(bg="#141313")
     label.place(relx=0.5, rely=0.8, anchor=tk.CENTER)
@@ -50,7 +50,7 @@ def show_connected():
 
 # Function to display UI elements when device is disconnected
 def show_disconnected():
-    update_label_image("/home/oualid/Documents/piplo/zimage/disconnected_device.png")
+    update_label_image("images/disconnected_device.png")
     root.geometry("360x250")
     root.configure(bg="#000000")
     label.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
@@ -133,13 +133,13 @@ def activate_vivo_automatically():
 # Create main window
 root = tk.Tk()
 root.title("Secret Space")
-root.iconphoto(True, tk.PhotoImage(file='/home/oualid/Documents/piplo/zimage/letter-s.png'))
+root.iconphoto(True, tk.PhotoImage(file='images/letter-s.png'))
 root.resizable(False, False)
 
 label = tk.Label(root, borderwidth=0)
 canvas = tk.Canvas(root, width=360, height=160, highlightthickness=0)
 
-image = tk.PhotoImage(file="/home/oualid/Documents/piplo/zimage/Group3.png")
+image = tk.PhotoImage(file="images/Group3.png")
 image_label = tk.Label(root, image=image, bg="#141313")
 image_label.image = image
 image_label.place(relx=0.5, rely=0.18, anchor="center")
@@ -147,7 +147,7 @@ image_label.place(relx=0.5, rely=0.18, anchor="center")
 check_button = tk.Checkbutton(root, text="Activate automatically", bg="#141313", fg="#9B9B9B", selectcolor="#141313", highlightthickness=0, activebackground="#141313", activeforeground="#9B9B9B", command=on_checkbutton_click)
 check_button.place(relx=0.3, rely=0.32)
 
-start_button_image = tk.PhotoImage(file="/home/oualid/Documents/piplo/zimage/start_button_image.png")
+start_button_image = tk.PhotoImage(file="images/start_button_image.png")
 start_button_label = tk.Button(root, image=start_button_image, bg="#141313", cursor="hand2", command=on_start_button_click)
 start_button_label.config(bd=0, highlightthickness=0)
 
